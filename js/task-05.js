@@ -6,8 +6,12 @@ const inputRef = document.querySelector('#name-input');
 const spanRef = document.querySelector('#name-output');
 
 inputRef.addEventListener("input", (event) => {
-  // spanRef.textContent = event.currentTarget.value
-  spanRef.textContent = inputRef.value;
-  console.log(event);
+  
+  if (inputRef.textContent = '') {
+    spanRef.textContent = "Anonimus";
+  } else {
+    spanRef.textContent = inputRef.value;
+  }
+
 });
 

@@ -15,10 +15,17 @@ const inputRef = document.querySelector('#validation-input')
 inputRef.addEventListener('blur', (event) => {
   
   if (event.target.value.length === Number(event.target.dataset.length)) {
-    inputRef.classList.add('valid');
-    inputRef.classList.remove('invalid')
+    onClassList();
   } else {
-    inputRef.classList.add('invalid');
-    inputRef.classList.remove('valid')
+    onClassRemove();
   }
 });
+
+function onClassList() {
+    inputRef.classList.add('valid');
+    inputRef.classList.remove('invalid')
+}
+function onClassRemove() {
+    inputRef.classList.add('invalid');
+    inputRef.classList.remove('valid')
+}
