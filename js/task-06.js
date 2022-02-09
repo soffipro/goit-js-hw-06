@@ -15,17 +15,13 @@ const inputRef = document.querySelector('#validation-input')
 inputRef.addEventListener('blur', (event) => {
   
   if (event.target.value.length === Number(event.target.dataset.length)) {
-    onClassList();
+    onAppdateClassList('valid','invalid');
   } else {
-    onClassRemove();
+    onAppdateClassList('invalid','valid');
   }
 });
 
-function onClassList() {
-    inputRef.classList.add('valid');
-    inputRef.classList.remove('invalid')
-}
-function onClassRemove() {
-    inputRef.classList.add('invalid');
-    inputRef.classList.remove('valid')
+function onAppdateClassList(a,b) {
+  inputRef.classList.add(a);
+  inputRef.classList.remove(b);
 }

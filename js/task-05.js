@@ -7,7 +7,7 @@ const spanRef = document.querySelector('#name-output');
 
 inputRef.addEventListener("input", (event) => {
   
-  if (inputRef.textContent = '') {
+  if (inputRef.value === '') {
     spanRef.textContent = "Anonimus";
   } else {
     spanRef.textContent = inputRef.value;
