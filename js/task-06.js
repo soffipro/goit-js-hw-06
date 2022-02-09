@@ -9,7 +9,6 @@
 // которые мы уже добавили в исходные файлы задания.
 
 
-// const inputRef = document.querySelector('[type="text"]')
 const inputRef = document.querySelector('#validation-input')
 
 

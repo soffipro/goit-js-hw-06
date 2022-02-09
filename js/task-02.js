@@ -17,9 +17,6 @@ const liRefs = ingredients.map(ingr => {
   console.log(liRef);
   return liRef;
 })
-  
-
-  
 
 ulRef.append(...liRefs);
 
